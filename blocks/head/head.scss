@@ -1,0 +1,57 @@
+// В этом файле должны быть стили для БЭМ-блока head, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/mixins.scss";
+
+.head {}
+
+.head__img-iceberg-wrapper {
+  @include container;
+  position: relative;
+}
+
+.head__img-iceberg {
+  position: absolute;
+  max-width: 1200px;
+  min-width: 700px;
+  width: 100%;
+  height: auto;
+  top: -180px;
+  left: -20%;
+}
+
+.head__bg-land {
+  background: linear-gradient(0deg, #fff 20%, #f2fbff 50%, #bbeaff 88.19%);
+  min-height: 440px;
+  display: flex;
+  align-items: center;
+}
+
+.head__bg-watter {
+  background: linear-gradient(0deg, #69dae2 0.86%, #2e7ec8 7.33%, #2e7ec8 20.33%, #69dae2 97.86%);
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.head__bg-watter-container {
+  @include container;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.head__img-ship {
+  width: 100%;
+  max-width: 931px;
+  height: auto;
+  margin-top: -150px;
+  z-index: 1;
+}
+
+.head__img-waves {
+  width: 100%;
+  max-width: 2000px;
+  display: block;
+  margin: 0 auto;
+  z-index: 1;
+}

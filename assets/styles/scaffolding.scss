@@ -21,10 +21,19 @@ html {
 }
 
 body {
-	font-family: Arial, sans-serif;
+	font-family: 'Circe',Arial,Helvetica,sans-serif;
 	font-size: 18px;
 	color: $text-color;
+	letter-spacing: 0.1em;
+
 }
+ h1,h2,h3,h4,h5,h6 {
+	 letter-spacing: 0.05em;
+ }
+
+ button {
+	 letter-spacing: 0.6px;
+ }
 
 a {
 	padding-bottom: 2px;
