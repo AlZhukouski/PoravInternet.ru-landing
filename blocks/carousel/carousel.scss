@@ -1,0 +1,121 @@
+// В этом файле должны быть стили для БЭМ-блока carousel, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/mixins.scss";
+
+.carousel {
+  background: url("../img/pc-screen.png") top center/100% auto no-repeat;
+  height: 800px;
+  padding: 37px 38px 0;
+  @media (max-width: 1199px) {
+    padding: 30px 31px 0;
+  }
+  @media (max-width: 991px) {
+    padding: 23px 23px 0;
+  }
+  @media (max-width: 767px) {
+    padding: 17px 17px 0;
+  }
+}
+
+.carousel-inner {
+  border-style: 1px;
+}
+
+
+.carousel-item {
+  position: static;
+  height: 599px;
+  overflow-y: scroll;
+  width: 100%;
+  @media (max-width: 1199px) {
+    height: 503px;
+  }
+  @media (max-width: 991px) {
+    height: 373px;
+  }
+  @media (max-width: 767px) {
+    height: 276px;
+  }
+
+  img {
+    margin-bottom: -10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  /* width */
+  &::-webkit-scrollbar {
+    width: 15px;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: linear-gradient(#154980, #4ea4cd);
+    border-radius: 10px;
+  }
+}
+
+.carousel_card-info {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  background: rgba(181, 231, 255, 0.95);
+  box-shadow: 10px 4px 64px rgba(0, 0, 0, 0.35);
+  padding: 25px;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  h4 {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    color: #1e2923!important;
+  }
+  p {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+  a {
+    font-size: 16px;
+  }
+}
+
+.carousel__arrow-wrap {
+  position: absolute;
+  display: inline-flex;
+  justify-content: space-between;
+  bottom: 20px;
+  right: 10px;
+  width: 80px;
+}
+
+.carousel__left-arrow, .carousel__right-arrow {
+  background: url(../img/slider-arrow.png) center/100% 100% no-repeat;
+  display: inline-block;
+  width: 23px;
+  height: 40px;
+  font-size: 0;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 10px;
+  }
+
+.carousel__left-arrow {
+  transform: rotate(180deg);
+  &:hover {
+    transform: rotate(180deg) translateX(5px);
+  }
+}
+
+.carousel__right-arrow {
+  &:hover {
+    transform: translateX(5px);
+  }
+}

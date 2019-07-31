@@ -3,7 +3,13 @@
 @import "../../assets/styles/variables.scss";
 @import "../../assets/styles/mixins.scss";
 
-.btn {}
+.btn {
+
+  &:focus, &:active {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}
 
 .btn__main{
   border-radius: 35px;
@@ -11,8 +17,15 @@
   box-shadow: 2px 6px 37px rgba(26,78,123,0.5);
   font-size: 24px;
   font-weight: bold;
+  background-color: $myblue;
+  color: $white;
+  border: none !important;
+
+  &:hover, &:focus, &:active {
+    color: $white;
+    box-shadow: none;
+    background-color: $myblue !important;
+    outline: 0 none !important;
+  }
 }
 
-.btn__main:hover{
-  box-shadow: none;
-}

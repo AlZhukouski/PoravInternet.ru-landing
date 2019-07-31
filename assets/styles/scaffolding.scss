@@ -24,11 +24,11 @@ body {
 	font-family: 'Circe',Arial,Helvetica,sans-serif;
 	font-size: 18px;
 	color: $text-color;
-	letter-spacing: 0.1em;
 
 }
  h1,h2,h3,h4,h5,h6 {
 	 letter-spacing: 0.05em;
+	 color: $myblue!important;
  }
 
  button {

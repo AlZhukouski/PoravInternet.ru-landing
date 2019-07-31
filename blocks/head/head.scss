@@ -3,21 +3,30 @@
 @import "../../assets/styles/variables.scss";
 @import "../../assets/styles/mixins.scss";
 
-.head {}
+.head {
+  position: relative;
+  h1{
+    font-weight: 800;
+  }
+  p {
+    letter-spacing: 0.1em;
+  }
+}
 
 .head__img-iceberg-wrapper {
   @include container;
-  position: relative;
+  position: absolute;
+  top: -230px;
+  left: -20%;
+  right: 0;
+  z-index: 1;
 }
 
 .head__img-iceberg {
-  position: absolute;
   max-width: 1200px;
   min-width: 700px;
   width: 100%;
   height: auto;
-  top: -180px;
-  left: -20%;
 }
 
 .head__bg-land {
@@ -28,8 +37,7 @@
 }
 
 .head__bg-watter {
-  background: linear-gradient(0deg, #69dae2 0.86%, #2e7ec8 7.33%, #2e7ec8 20.33%, #69dae2 97.86%);
-  padding-bottom: 50px;
+  background: linear-gradient(0deg,#2e7ec8 0%,#2e7ec8 7.33%,#2e7ec8 20.33%,#69dae2 99.86%);
   display: flex;
   flex-direction: column;
 }
@@ -44,14 +52,26 @@
   width: 100%;
   max-width: 931px;
   height: auto;
-  margin-top: -150px;
+  margin-top: -180px;
   z-index: 1;
 }
 
-.head__img-waves {
+.head__img-waves-wrapper{
   width: 100%;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.head__img-waves {
+  width: calc(100% + 400px);
+  transform: translateX(-200px);
   max-width: 2000px;
   display: block;
   margin: 0 auto;
   z-index: 1;
+
+  @media (min-width: 1600px) {
+    width: 100%;
+    transform: translateX(0px);
+  }
 }
