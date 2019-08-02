@@ -299,9 +299,73 @@
 
 		</div>
 
+		<div class="container container__form">
+			<form action="action_page.php">
 
+				<div class="row justify-content-center mb-3">
+					<div class="col-auto order-md-2">
+						<img src="../img/papyrus@2x.png" alt="Пиратский свисток" class="float-right" width="100px"
+							 height="124px">
+					</div>
+
+					<div class="col order-md-1">
+						<h2 class="h1 font-weight-bold mb-4">Связаться с нами</h2>
+						<p class="mb-3">Напишите нам свою историю и мы подскажем, как вашему сайту оказаться на гребне
+							волны</p>
+					</div>
+				</div>
+
+				<label for="fname"></label>
+				<input type="text" id="fname" name="firstname" placeholder="Как к вам можно обращаться">
+
+				<label for="tel"></label>
+				<input type="text" id="tel" name="tel" placeholder="Ваш телефон">
+
+				<label for="e-mail"></label>
+				<input type="text" id="e-mail" name="e-mail" placeholder="Ваш e-mail">
+
+				<label for="subject"></label>
+				<textarea id="subject" name="subject" placeholder="Задайте вопрос или опишите задачу"
+						  style=" height:4em"></textarea>
+
+				<label for="design_layout">Если готов дизайн макета:</label>
+				<input type="text" id="design_layout" name="design_layout"
+					   placeholder="Прикрепить ссылку (figma или облачный диск)">
+
+
+				<label for="file-1" class="container__form__label">
+
+						<span class="container__form__label-title">Добавить файл
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+								 xmlns="http://www.w3.org/2000/svg">
+							<path d="M14.8728 8.23409C14.8728 8.23409 15.6816 7.61906 15.0659 7.00403C14.4502 6.389 13.8517 7.18267 13.8517 7.18267L7.66249 13.3732C7.66249 13.3732 6.21292 15.244 5.11074 14.1128C4.00989 12.9803 5.8497 11.5604 5.8497 11.5604L13.9651 3.44569C13.9651 3.44569 15.8589 1.35933 17.6394 3.1385C19.4173 4.91833 17.325 6.81616 17.325 6.81616L8.20633 15.9348C8.20633 15.9348 5.28873 19.3053 2.588 16.6039C-0.112723 13.9025 3.2907 11.0179 3.2907 11.0179L10.2136 4.09302C10.2136 4.09302 10.9888 3.44569 10.408 2.86296C9.82465 2.28089 9.17864 3.05742 9.17864 3.05742L1.23467 11.0014C1.23467 11.0014 -1.76401 14.2901 1.58471 17.6382C4.93342 20.9882 8.22413 17.9895 8.22413 17.9895L19.1424 7.06995C19.1424 7.06995 21.327 4.66059 18.7225 2.05479C16.118 -0.551015 13.708 1.63356 13.708 1.63356L4.31312 11.0271C4.31312 11.0271 1.90705 12.9843 4.09031 15.1662C6.27357 17.3508 8.19512 14.9091 8.19512 14.9091L14.8728 8.23409Z"
+								  fill="#1F6699"></path>
+							</svg>
+
+							<span class="container__form__label-caption">— не более 40 мегабайт</span>
+
+							<div class="container__form-input-wrap">
+								<input type="file" name="files[]" id="file-1" class="add-file" data-multiple-caption="{count} файла добавлено" multiple="">
+							</div>
+
+						</span>
+				</label>
+
+				<div class="container__form-checkbox-field">
+					<input type="checkbox" class="container__form-checkbox" name="rules-agree" id="rules-agree" required="">
+					<label for="rules-agree">Cогласен на обработку персональных данных и с <a href="https://poravinternet.ru/policy">политикой
+					конфиденциальности</a>
+					</label>
+				</div>
+
+				<button type="submit" value="Submit" class="btn btn__main container__form-btn btn-lg text-uppercase mb-5">Отправить</button>
+
+			</form>
 
 		</div>
+
+
+	</div>
 
 	</div>
 
