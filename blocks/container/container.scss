@@ -130,7 +130,22 @@
 }
 
 .container__form {
-  margin-top: 350px;
+  margin-top: 450px;
+  position: relative;
+
+  .container__form-wrap-stingray, .container__form-img-octopus {
+    position: absolute;
+  }
+
+  .container__form-wrap-stingray {
+    top: 575px;
+    right: -40px;
+  }
+
+  .container__form-img-octopus {
+    top: -20px;
+    left: -160px;
+  }
 
   .container__form__label-title {
     font-weight: bold;

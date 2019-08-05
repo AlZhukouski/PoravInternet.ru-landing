@@ -7,7 +7,6 @@
   position: relative;
   overflow: hidden;
   padding-top: 400px;
-  height: 10000px;
   width: 100%;
   background: left 500px url("../img/bubbles.png") repeat,
               linear-gradient(180deg, #5dbfe7 0%, #53afdb 1%, #154980 100%);
@@ -79,4 +78,18 @@
   margin-top: -110px;
   margin-left: -110px;
 }
+.underwater-container__footer-img {
+  margin-top: -400px;
+  width: 100%;
+  height: auto;
 
+  @media (max-width: 1920px) {
+    margin-top: -300px;
+  }
+  @media (max-width: 1440px){
+    margin-top: -150px;
+  }
+  @media (max-width: 768px) {
+    margin-top: -50px;
+  }
+}
